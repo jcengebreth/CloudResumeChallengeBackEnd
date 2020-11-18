@@ -51,7 +51,7 @@ class TestUserCount(unittest.TestCase):
         pass
     
     def test_updateUserCount(self):
-        count1 = lambda_handler(self.event, self.context)
+        count1 = visitor_count.lambda_handler(self.event, self.context)
         
         
         self.assertTrue(count1['body'] > 0)
