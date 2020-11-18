@@ -33,7 +33,7 @@ jobs:
                   pip install -r requirements.txt
     - name: Run Unit Test
       run: |
-        python3 -m unittest test_UpdateCount.py
+        python3 -m unittest tests.test_UpdateCount
     - name: Zip lambda function
       run: cd visitor_count && visitor_count.zip visitor_count.py
     - name: Deploy AWS Lambda function
