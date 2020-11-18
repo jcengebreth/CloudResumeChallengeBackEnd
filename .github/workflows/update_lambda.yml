@@ -30,15 +30,14 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install flake8 pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Run Unit Test
       run: |
-        python3 -m unittest tests/test_UpdateCount.py
+        python3 -m unittest test_UpdateCount.py
     - name: Zip lambda function
       run: cd visitor_count && visitor_count.zip visitor_count.py
     - name: Deploy AWS Lambda function
-      uses: yvesgurcan/deploy-lambda-function@v0.0.5
+      uses: yvesgurcan/deploy-lambda-function@master
       with:
         package: ./visitor_count/visitor_count.zip
         function-name: site-counter-dynamodb
