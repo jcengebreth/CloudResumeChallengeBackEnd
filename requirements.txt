@@ -1,1 +1,6 @@
-
+boto3
+json
+botocore
+decimal
+unittest
+moto
