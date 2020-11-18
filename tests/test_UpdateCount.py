@@ -1,7 +1,8 @@
 import unittest
 import boto3
+import visitor_count
 from moto import mock_dynamodb2
-from visitor_count import *
+
 
 #Use moto decorator to ensure we don't use actual AWS services
 @mock_dynamodb2
