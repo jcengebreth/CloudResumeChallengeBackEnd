@@ -6,7 +6,7 @@ on:
     paths:
       - 'visitor_count/*'
       - '.github/workflows/update_lambda.yml'
-    #adding tags in case I add versioning later via branches
+    #adding tags in case I add versioning later via branches?
     #tags:
     #  - v1
     #  - v1.*
