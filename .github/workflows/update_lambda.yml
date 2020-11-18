@@ -35,7 +35,7 @@ jobs:
       run: |
         python3 -m unittest tests.test_UpdateCount
     - name: Zip lambda function
-      run: cd visitor_count && visitor_count.zip visitor_count.py
+      run: cd visitor_count && zip visitor_count.zip visitor_count.py
     - name: Deploy AWS Lambda function
       uses: yvesgurcan/deploy-lambda-function@master
       with:
