@@ -1,6 +1,6 @@
 import unittest
 import boto3
-import visitor_count
+from visitor_count import visitor_count
 from moto import mock_dynamodb2
 
 
