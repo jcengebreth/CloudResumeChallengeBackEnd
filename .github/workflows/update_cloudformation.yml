@@ -1,4 +1,4 @@
-name: update_backend
+name: update_cloudformation
 on: [push]
 jobs:
   check-bats-version:
