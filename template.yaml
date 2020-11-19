@@ -14,10 +14,6 @@ Globals:
 
 
 Resources:
-  S3Bucket:
-    Type: AWS::S3::Bucket
-    Properties:
-      BucketName: aws-sam-cli-managed-visitor-count
 
   VisitorCountFunction:
     Type: AWS::Serverless::Function
