@@ -35,7 +35,7 @@ Resources:
   VisitorCountTable:
     Type: AWS::DynamoDB::Table
     Properties:
-      TableName: website-visits
+      TableName: website-visits-count
       AttributeDefinitions:
         - 
           AttributeName: "site"
