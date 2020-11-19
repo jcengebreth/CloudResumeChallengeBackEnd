@@ -12,14 +12,14 @@ class TestUserCount(unittest.TestCase):
         """
         try:
             dynamodb = boto3.resource('dynamodb')
-            dynamodb.meta.client.describe_table(TableName='website-visits')
+            dynamodb.meta.client.describe_table(TableName='website-visits-count')
         except botocore.exceptions.ClientError:
             pass
         else:
-            err = "{Table} should not exist.".format(Table = 'website-visits')
+            err = "{Table} should not exist.".format(Table = 'website-visits-count')
             raise EnvironmentError(err)
         """
-        table_name = 'website-visits'
+        table_name = 'website-visits-count'
         dynamodb = boto3.resource('dynamodb', region_name='us-east-1')
 
         
