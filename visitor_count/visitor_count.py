@@ -31,7 +31,7 @@ class DecimalEncoder(json.JSONEncoder):
 
 def lambda_handler(event, context):
     dynamodb = boto3.resource('dynamodb', region_name='us-east-1')
-    table = dynamodb.Table('website-visits')
+    table = dynamodb.Table('website-visits-count')
     response = table.update_item(
         Key={
         'site':'engebreth.com'
